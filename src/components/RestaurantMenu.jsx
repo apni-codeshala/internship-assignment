@@ -15,7 +15,7 @@ const RestaurantMenu = () => {
     return !(restaurant?.cuisines) ? (<MenuHeaderShimmer />):(
         <div className="flex flex-col justify-center align-center" style={{ backgroundColor: '#3d3d3d' }}>
 
-            <div className="w-full flex mt-20 py-10 px-28 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style={{ backgroundColor: '#3d3d3d' }}>
+            <div className="w-full flex flex-wrap px-13 mt-20 py-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style={{ backgroundColor: '#3d3d3d' }}>
                 <a href="#">
                     <img className="p-2 h-56 w-80 rounded-md" src={CLOUDINARY_URL + restaurant.cloudinaryImageId} alt="image" />
                 </a>
